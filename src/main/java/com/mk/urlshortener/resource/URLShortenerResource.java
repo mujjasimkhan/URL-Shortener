@@ -29,17 +29,24 @@ public class URLShortenerResource {
 		URLShortener urlObj;
 		URLShortenerHelper urlShortenerHelperObj;
 		String shortenedUrl;
+
 		String originalUrl = urlRequestBean.getOriginalUrl();
-		URLShortener shortenedUrlList = urlRepository.findByShortenedUrl(originalUrl);
-		if (shortenedUrlList == null) {
-			urlShortenerHelperObj = new URLShortenerHelper(5, "www.mk.com/");
-			shortenedUrl = urlShortenerHelperObj.shortenURL(originalUrl);
-			urlObj = new URLShortener();
-			urlObj.setShortenedUrl(shortenedUrl);
-			urlObj.setUrl(urlShortenerHelperObj.sanitizeURL(originalUrl));
-			return urlRepository.save(urlObj);
-		} else {
-			return shortenedUrlList;
+		String sanitizeOriginalURL = new URLShortenerHelper().sanitizeURL(originalUrl);
+		try {
+			URLShortener shortenedUrlList = urlRepository.findByShortenedUrl(sanitizeOriginalURL);
+			if (shortenedUrlList == null) {
+				urlShortenerHelperObj = new URLShortenerHelper(5, "www.mk.com/");
+				shortenedUrl = urlShortenerHelperObj.shortenURL(originalUrl);
+				urlObj = new URLShortener();
+				urlObj.setShortenedUrl(shortenedUrl);
+				urlObj.setUrl(sanitizeOriginalURL);
+				return urlRepository.save(urlObj);
+			} else {
+				return shortenedUrlList;
+			}
+		} catch (Exception e) {
+			throw new RuntimeException("Failed to perform DB operation");
 		}
+
 	}
 }
