@@ -27,9 +27,9 @@ unique for each input URL.
 4. Install MySQL workbeanch
 
 ### Steps to run the aplication
-1.Import url_shortener DB into MySQL workbeanch.
-2.Download urlshortener-0.0.1-SNAPSHOT.war and open command prompt 
-3.In Command prompt ececute the command - java -jar urlshortener-0.0.1-SNAPSHOT.war
-4.Launch application with http://localhost:8080/
+1. Import url_shortener DB into MySQL workbeanch.
+2. Download urlshortener-0.0.1-SNAPSHOT.war and open command prompt 
+3. In Command prompt ececute the command - java -jar urlshortener-0.0.1-SNAPSHOT.war
+4. Launch application with http://localhost:8080/
 
 
