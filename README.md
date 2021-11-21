@@ -41,5 +41,11 @@ unique for each input URL.
 
 ### Screenshots
 
-1. Screenshot 1
+1. Screenshot 1 : Landing Screen
+![alt text](https://github.com/mujjasimkhan/urlshortener-war/blob/91cec0c11f540942191fedff38269f7a661cd71d/URLScreen_1.PNG)
 
+2. Screenshot 2 : Success Screen
+![alt text](https://github.com/mujjasimkhan/urlshortener-war/blob/91cec0c11f540942191fedff38269f7a661cd71d/URLScreen_2.PNG)
+
+3. Screenshot 3 : Error Screen
+![alt text](https://github.com/mujjasimkhan/urlshortener-war/blob/91cec0c11f540942191fedff38269f7a661cd71d/URLScreen_3.PNG)
