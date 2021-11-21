@@ -11,12 +11,6 @@ public class URLShortener {
 	public URLShortener() {
 		
 	}
-	public URLShortener(Integer urlId, String shortenedUrl, String url) {
-		super();
-		this.urlId = urlId;
-		this.shortenedUrl = shortenedUrl;
-		this.url = url;
-	}
 
 	@Id
 	@GeneratedValue(strategy= GenerationType.AUTO)
@@ -46,14 +40,5 @@ public class URLShortener {
 
 	public void setUrl(String url) {
 		this.url = url;
-	}
-
-	@Override
-	public String toString() {
-		return "URLBean{" +
-				"urlId=" + urlId +
-				", shortenedUrl='" + shortenedUrl + '\'' +
-				", url='" + url + '\'' +
-				'}';
 	}
 }
