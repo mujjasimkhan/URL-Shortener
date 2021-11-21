@@ -33,12 +33,13 @@ unique for each input URL.
 4. Launch application with http://localhost:8080/
 
 ### Few examples of URL's
-https://www.amazon.com
-http://www.flipkart.com
-www.snapdeal.com
-www.amazon.com/{path-parameters}
-www.amazon.com?{query-parameters}
+- https://www.amazon.com
+- http://www.flipkart.com
+- www.snapdeal.com
+- www.amazon.com/{path-parameters}
+- www.amazon.com?{query-parameters}
 
 ### Screenshots
 
 1. Screenshot 1
+
