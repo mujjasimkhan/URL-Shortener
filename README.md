@@ -38,3 +38,7 @@ http://www.flipkart.com
 www.snapdeal.com
 www.amazon.com/{path-parameters}
 www.amazon.com?{query-parameters}
+
+### Screenshots
+
+1. Screenshot 1
