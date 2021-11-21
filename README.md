@@ -27,9 +27,12 @@ unique for each input URL.
 4. Install MySQL workbeanch
 
 ### Steps to run the aplication
-1. Import url_shortener DB into MySQL workbeanch(urlshortener-war/url_shortener_hibernate_sequence.sql and urlshortener-war/url_shortener_urlshortener.sql)
-2. Download urlshortener-0.0.1-SNAPSHOT.war and open command prompt (urlshortener-war/urlshortener-0.0.1-SNAPSHOT.war)
-3. In Command prompt ececute the command - java -jar urlshortener-0.0.1-SNAPSHOT.war
+1. Import url_shortener DB into MySQL workbeanch
+  * [url_shortener_hibernate_sequence.sql](https://github.com/mujjasimkhan/urlshortener-war/blob/91cec0c11f540942191fedff38269f7a661cd71d/url_shortener_hibernate_sequence.sql)
+  * [url_shortener_urlshortener.sql](https://github.com/mujjasimkhan/urlshortener-war/blob/91cec0c11f540942191fedff38269f7a661cd71d/url_shortener_urlshortener.sql)
+2. Download urlshortener-0.0.1-SNAPSHOT.war
+  * [urlshortener-0.0.1-SNAPSHOT.war](https://github.com/mujjasimkhan/urlshortener-war/blob/91cec0c11f540942191fedff38269f7a661cd71d/urlshortener-0.0.1-SNAPSHOT.war)
+3. Open command prompt ececute the command - java -jar urlshortener-0.0.1-SNAPSHOT.war
 4. Launch application with http://localhost:8080/
 
 ### Few examples of URL's
